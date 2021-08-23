@@ -16,11 +16,11 @@ body {
 
 body {
   font-size: 16px;
-  font-family: "Nato Sans", Arial, sans-serif;
   line-height: 1.42;
-  font-weight: 400;
   -webkit-font-smoothing: antialised;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Nato Sans", Arial, sans-serif;
+  font-weight: 400;
   color: $black;
 }
 
@@ -49,18 +49,15 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  & > li {
+    list-style: none;
+  }
 }
-
-ul>li {
-  list-style: none;
-}
-
 
 button {
   border: none;
   background: transparent;
   cursor: pointer;
-
   &:focus {
     outline: none;
   }
@@ -73,6 +70,13 @@ button {
   padding: 19px 97px;
   font-size: 18px;
   text-transform: uppercase;
+  border: 1px solid transparent;
+  &:focus {
+     border-color: $brown-dark;
+  }
+  &:hover {
+    background-color: $brown-hover;
+  }
 }
 
 
@@ -109,7 +113,7 @@ p {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 

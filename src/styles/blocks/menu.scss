@@ -1,0 +1,31 @@
+.menu {
+  font-size: 20px;
+  &__toggle {
+    display: none;
+    font-size: 0;
+    position: relative;
+    width: 20px;
+    height: 18px;
+    background-image: url('images/hamburger.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    & + .menu__item {
+      margin-left: 76px;
+    }
+  }
+
+  &__link {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      color: $brown;
+    }
+  }
+}

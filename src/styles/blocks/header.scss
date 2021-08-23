@@ -1,0 +1,29 @@
+.header {
+  padding: 35px 0 50px;
+  background-color: #fff;
+  &__col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) {
+      justify-content: flex-start;
+      flex: 1.2;
+    }
+
+    &:nth-child(2) {
+      justify-content: flex-end;
+      flex: 1;
+    }
+  }
+  &__menu {
+    margin-left: 65px;
+  }
+  &__worktime {
+    margin-right: 80px;
+  }
+}

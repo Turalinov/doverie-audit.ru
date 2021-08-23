@@ -1,0 +1,13 @@
+.worktime {
+  font-size: 18px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  &__title {
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  &__shedule {
+    
+  }
+}
