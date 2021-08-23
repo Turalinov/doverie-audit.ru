@@ -86,6 +86,12 @@ task('favicon', () => {
 })
 
 
+task('fonts', () => {
+  return src([`${SRC_PATH}/fonts/*.woff`, `${SRC_PATH}/fonts/*.woff2`])
+    .pipe(dest(`${DIST_PATH}/fonts/`))
+})
+
+
 task('scripts', () => {
   return src([
     ...JS_LIBS,
@@ -129,7 +135,7 @@ task('watch', () => {
 task("default",
   series(
     "clean",
-    parallel("copy:html", "styles", "scripts", "icons", "favicon", "images"),
+    parallel("copy:html", "styles", "scripts", "icons", "favicon", "images", "fonts"),
     parallel("watch", "server")
   )
 )
@@ -137,6 +143,6 @@ task("default",
 task("build",
   series(
     "clean",
-    parallel("copy:html", "styles", "scripts", "icons", "favicon", "images")
+    parallel("copy:html", "styles", "scripts", "icons", "favicon", "images", "fonts")
   )
 )

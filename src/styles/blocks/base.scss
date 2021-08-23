@@ -134,6 +134,14 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: $breakpoint-desktop-lg) {
+  .container{
+    width: 1336px;
+  }
+}
+
+
+
 @media (max-width: $breakpoint-tablet) {
 
 }
