@@ -1,0 +1,16 @@
+$black: rgba(14, 15, 14, 1);
+$white: rgba(244, 244, 244, 1);
+$light: rgba(249, 249, 249, 1);
+$brown:   rgba(201, 168, 143, 1);
+$brown-light: rgba(251, 247, 241, 1);
+$turquoise: rgba(113, 177, 183, 1);
+$gray: rgba(180, 180, 180, 1);
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 576px;
+$breakpoint-mobile-sm: 480px;
+
+// $z-modal-back: 300;
+// $z-modal-body: 400;
+
+@import "./blocks/*.scss";
