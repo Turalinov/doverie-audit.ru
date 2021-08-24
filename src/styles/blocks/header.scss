@@ -59,7 +59,7 @@
 }
 
 .header__menu {
-  margin-left: rem(65px);
+  margin-left: rem(70px);
 
   @include phones {
     margin-left: 0;
@@ -76,7 +76,7 @@
 }
 
 .header__phone {
-  margin-left: rem(50px);
+  margin-left: rem(60px);
 
   @include tablets {
     margin-left: 0;

@@ -1,0 +1,22 @@
+.hero {
+  padding: rem(130px) 0 rem(299px);
+  background-color: #FFF9F1;
+  background-image: url('images/specialist.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero__title {
+  max-width: rem(778px);
+  text-transform: uppercase;
+  @include teno;
+  margin-bottom: rem(22px)
+}
+.hero__offer {
+  font-size: rem(18px);
+  max-width: 538px;
+  margin-bottom: 32px;
+}
+.hero__before {
+
+}
