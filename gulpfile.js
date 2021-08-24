@@ -127,6 +127,7 @@ task('watch', () => {
   watch(`./${SRC_PATH}/scripts/*.js`, series('scripts'))
   watch(`./${SRC_PATH}/images/icons/*.svg`, series('icons'))
   watch([`./${SRC_PATH}/images/*.png`, `./${SRC_PATH}/images/*.svg`], series('images'))
+  watch([`./${SRC_PATH}/fonts/*.woff`, `./${SRC_PATH}/fonts/*.woff2`], series('fonts'))
 
 })
 

@@ -2,18 +2,28 @@
   font-weight: 500;
   text-decoration: none;
   color: $black;
-  font-size: 20px;
+  font-size: rem(20px);
   position: relative;
+  padding-left: rem(28px);
+
+  @include phones {
+    font-size: rem(16px);
+  }
   &::before {
     content: '';
     position: absolute;
     background-image: url('images/phone.svg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 21px;
-    height: 21px;
-    left: -28px;
-    top: 3px;
+    width: rem(21px);
+    height: rem(21px);
+    top: rem(3px);
+    left: 0;
+
+    @include tablets {
+      width: 17px;
+      height: 17px;
+    }
   }
 }

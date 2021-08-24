@@ -1,0 +1,40 @@
+@mixin teno() {
+  font-family: "Teno Sans", Arial, sans-serif;
+}
+
+@mixin noto($style: regular) {
+  font-family: "Nato Sans", Arial, sans-serif;
+
+  @if $style==regular {
+    font-weight: 400;
+  }
+
+  @if $style==medium {
+    font-weight: 500;
+  }
+
+  @if $style==semibold {
+    font-weight: 600;
+  }
+
+  @if $style==bold {
+    font-weight: 700;
+  }
+
+}
+
+@mixin tablets() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}

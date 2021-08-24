@@ -1,41 +1,82 @@
 .menu {
-  font-size: 20px;
-  &__toggle {
+  font-size: rem(20px);
+  position: relative;
+  
+  @include tablets {
+    font-size: rem(16px);
+  }
+}
+
+.menu__toggle {
+  display: none;
+  font-size: 0;
+  position: relative;
+  width: rem(20px);
+  height: rem(18px);
+  background-image: url('images/hamburger.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:hover {
+    filter: grayscale(1);
+  }
+
+  @include phones {
+    display: block;
+    z-index: $z-hamburger;
+  }
+}
+
+.menu__list {
+  display: flex;
+
+  @include phones {
     display: none;
-    font-size: 0;
-    position: relative;
-    width: 20px;
-    height: 18px;
-    background-image: url('images/hamburger.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-  }
-  &__list {
-    display: flex;
-  }
-  &__item {
-    & + .menu__item {
-      margin-left: 76px;
-    }
-  }
-
-  &__link {
-    color: $black;
-    text-decoration: none;
-    &:hover {
-      color: $brown;
-    }
+    background-color: #fff;
+    top: rem(-40px);
+    right: rem(-10px);
+    flex-direction: column;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.1);
+    padding: rem(36px) rem(17px) rem(30px) rem(8px);
+    z-index: $z-menu;
   }
 }
 
-@media (max-width: $breakpoint-desktop-lg) {
-  .menu {
-    &__item {
-      & + .menu__item {
-        margin-left: 30px;
-      }
+.menu__item {
+
+  @include phones {
+    margin-left: rem(20px);
+    margin-right: rem(30px);
+    border-bottom: 0.6px solid $brown;
+    padding: rem(5px) 0 rem(2px);
+  }
+
+  &+.menu__item {
+    margin-left: rem(56px);
+
+
+    @include phones {
+      margin-left: rem(20px);
     }
+
   }
 }
+
+.menu__link {
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $brown;
+  }
+}
+
+// @media (max-width: $breakpoint-desktop-lg) {
+//   .menu__item {
+//     &+.menu__item {
+//       margin-left: rem(30px);
+//     }
+//   }
+// }

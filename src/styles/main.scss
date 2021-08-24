@@ -1,71 +1,21 @@
 $black: rgba(14, 15, 14, 1);
 $white: rgba(244, 244, 244, 1);
 $light: rgba(249, 249, 249, 1);
-
 $brown:   rgba(201, 168, 143, 1);
 $brown-hover: #b3957e;
-
 $brown-light: rgba(251, 247, 241, 1);
 $turquoise: rgba(113, 177, 183, 1);
 $gray: rgba(180, 180, 180, 1);
-
 $brown-dark: #6b6b6b;
 
-$breakpoint-desktop-lg: 1490px;
-$breakpoint-desktop: 1280px;
-$breakpoint-desktop-sm: 992px;
-$breakpoint-tablet: 768px;
-$breakpoint-tablet-sm: 576px;
-$breakpoint-mobile: 480px;
-$breakpoint-mobile-sm: 320px;
-
-
-@font-face {
-  font-family: 'Nato Sans';
-  src: url('fonts/notosans-bold-webfont.woff2') format('woff2'),
-    url('fonts/notosans-bold-webfont.woff') format('woff');
-  font-weight: 700 ;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'Nato Sans';
-  src: url('fonts/notosans-medium-webfont.woff2') format('woff2'),
-    url('fonts/notosans-medium-webfont.woff') format('woff');
-  font-weight: 500 ;
-  font-style: normal;
-}
-
-
-
-
-@font-face {
-  font-family: 'Nato Sans';
-  src: url('fonts/notosans-regular-webfont.woff2') format('woff2'),
-    url('fonts/notosans-regular-webfont.woff') format('woff');
-  font-weight: 400 ;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'Nato Sans';
-  src: url('fonts/notosans-semibold-webfont.woff2') format('woff2'),
-    url('fonts/notosans-semibold-webfont.woff') format('woff');
-  font-weight: 600 ;
-  font-style: normal;
-
-}
-  
+$z-hamburger: 2;
+$z-menu: 1;
 
 // $z-modal-back: 300;
 // $z-modal-body: 400;
+
+@import "./layout/fonts.scss";
+@import "./layout/mixins.scss";
+@import "./layout/base.scss";
 
 @import "./blocks/*.scss";
