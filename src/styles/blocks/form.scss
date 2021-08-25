@@ -1,0 +1,59 @@
+.form {
+
+}
+.form__col {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(16px);
+}
+.form__row {
+  flex: 1;
+
+}
+.form__row+.form__row {
+  margin-left: rem(16px);
+}
+.form__input {
+  border-radius: 10px;
+  padding: rem(19px) rem(23px);
+}
+.form__btn {
+  width: 100%;
+}
+
+.form__label {
+  display: flex;
+  @include noto(light);
+}
+.form__checkbox {
+  display: none;
+}
+.form__appearance {
+  width: rem(18px);
+  height: rem(18px);
+  border: 1px solid $white;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 7px;
+}
+
+.form__checkbox:checked~.form__appearance:before {
+  width: rem(9px);
+  height: rem(7px);
+  transition: .2s;
+}
+
+.form__appearance:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  background-image: url('images/check.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -30,10 +30,23 @@
   font-style: normal;
 }
 
+
 @font-face {
-  font-family: 'Teno Sans';
-  src: url('tenorsans-webfont.woff2') format('woff2'),
-    url('tenorsans-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Nato Sans';
+  src: url('fonts/notosans-light-webfont.woff2') format('woff2'),
+    url('fonts/notosans-light-webfont.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
+
 }
+
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('fonts/tenorsans-regular-webfont.woff2') format('woff2'),
+         url('fonts/tenorsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+

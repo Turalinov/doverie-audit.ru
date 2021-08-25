@@ -1,9 +1,15 @@
 @mixin teno() {
-  font-family: "Teno Sans", Arial, sans-serif;
+  font-family: 'Tenor Sans',
+  Arial,
+  sans-serif;
 }
 
 @mixin noto($style: regular) {
   font-family: "Nato Sans", Arial, sans-serif;
+
+  @if $style==light {
+    font-weight: 300;
+  }
 
   @if $style==regular {
     font-weight: 400;
