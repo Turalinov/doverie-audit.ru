@@ -25,4 +25,8 @@
 
 .worktime__schedule {
   margin-left: rem(10px);
+
+  @include tablets {
+    margin-left: 0;
+  }
 }

@@ -3,10 +3,10 @@
   background-color: #fff;
 
   @include tablets {
-    padding: rem(13px) 0 rem(20px);
+    padding: rem(5px) 0 rem(44px);
   }
 
-  @include tablets {
+  @include phones {
     padding: rem(10px) 0 rem(15px);
   }
 }
@@ -61,7 +61,6 @@
   @include phones {
     flex-wrap: nowrap;
     justify-content: space-between;
-    background: linear-gradient(127.44deg, #FFF9F1 99.97%, rgba(255, 249, 241, 0) 102.12%);
   }
 }
 

@@ -1,21 +1,54 @@
 .hero {
-  padding: rem(130px) 0 rem(299px);
+  padding: rem(130px) 0 rem(300px);
   background-color: #FFF9F1;
   background-image: url('images/specialist.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include tablets {
+    padding: rem(50px) 0 rem(105px);
+  }
+
+  @include phones {
+    padding: rem(40px) 0 rem(200px);
+    background-image: url('images/specialist-mobile.png');
+    background-size: inherit;
+    background-position: 100% 133%;
+  }
 }
 .hero__title {
-  max-width: rem(778px);
+  max-width: 54%;
   text-transform: uppercase;
   @include teno;
-  margin-bottom: rem(22px)
+  margin-bottom: rem(22px);
+
+  @include tablets {
+    max-width: 64%;
+    margin-bottom: rem(15px);
+  }
+  @include phones {
+    max-width: 76%;
+  }
+
+  
 }
 .hero__offer {
   font-size: rem(18px);
-  max-width: 538px;
-  margin-bottom: 32px;
+  max-width: 39%;
+  margin-bottom: rem(32px);
+
+  @include tablets {
+    font-size: rem(16px);
+    max-width: 48%;
+    margin-bottom: rem(17px);
+  }
+
+  @include phones {
+    font-size: rem(14px);
+    max-width: 85%;
+    margin-bottom: rem(7px);
+  }
 }
 .hero__before {
 
