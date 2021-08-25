@@ -28,9 +28,12 @@
 }
 
 .menu__list {
-  display: flex;
-  transition: all .5s ease;
+  display: flex; 
+  
+}
 
+.menu__list--adaptive {
+  transition: all .5s ease;
 
   &.is-open {
     right: rem(-10px);
@@ -49,14 +52,13 @@
     z-index: $z-menu;
     opacity: 0;
   }
-}
+  }
 
 .menu__item {
 
   @include phones {
     margin-left: rem(20px);
     margin-right: rem(30px);
-    border-bottom: 0.6px solid $brown;
     padding: rem(5px) 0 rem(2px);
   }
 
@@ -69,6 +71,13 @@
     }
 
   }
+}
+
+
+.menu__list--adaptive .menu__item {
+    @include phones {
+      border-bottom: 0.6px solid $brown;
+    }
 }
 
 .menu__link {

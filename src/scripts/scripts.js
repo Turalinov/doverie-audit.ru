@@ -4,7 +4,7 @@
   console.log('a', a);
   
   const menuToggle = document.querySelector('.menu__toggle');
-  const menu = document.querySelector('.menu__list');
+  const menu = document.querySelector('.menu__list--adaptive');
   // const body = document.querySelector('body')
 
   menuToggle.addEventListener('click', (e) => {
@@ -37,7 +37,7 @@
       // }
 
       //для мобилки закрытия меню берем родитель меню
-      const parentMenu = findParent(menuLink, '.menu__list');
+      const parentMenu = findParent(menuLink, '.menu__list--adaptive');
       if(parentMenu !== false) {
         if (parentMenu.classList.contains('is-open')) {
           parentMenu.classList.toggle('is-open');
