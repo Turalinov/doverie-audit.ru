@@ -29,18 +29,18 @@
 
 .menu__list {
   display: flex;
-  transition: all 1s ease;
+  transition: all .5s ease;
 
 
   &.is-open {
+    right: rem(-10px);
     opacity: 1;
-    visibility: visible;
   }
 
   @include phones {
+    right: rem(-200px);
     background-color: #fff;
     top: rem(-40px);
-    right: rem(-10px);
     flex-direction: column;
     position: absolute;
     border-radius: 10px;
@@ -48,7 +48,6 @@
     padding: rem(36px) rem(17px) rem(30px) rem(8px);
     z-index: $z-menu;
     opacity: 0;
-    visibility: hidden;
   }
 }
 

@@ -1,13 +1,17 @@
 .header {
-  padding: rem(35px) 0 rem(50px);
+  padding: rem(25px) 0 rem(40px);
   background-color: #fff;
 
   @include tablets {
-      padding: rem(13px) 0 rem(44px);
+    padding: rem(13px) 0 rem(20px);
+  }
+
+  @include tablets {
+    padding: rem(10px) 0 rem(15px);
   }
 }
 
-.header__col {
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,52 +22,64 @@
 
 }
 
-.header__row {
+.header__top,
+.header__bottom {
   display: flex;
   align-items: center;
+  flex: 1 1 auto;
+}
 
-  &:nth-child(1) {
-    justify-content: flex-start;
-    
-    // flex: 1;
+.header__top {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1.2;
 
-    @include tablets {
-      padding-bottom: rem(14px);
-      border-bottom: 1px solid #ddd;
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    @include phones {
-      justify-content: space-between;
-    }
+  @include tablets {
+    padding-bottom: rem(14px);
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+    width: 100%;
   }
 
-  &:nth-child(2) {
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    // flex: 1;
+  @include phones {
+    justify-content: space-between;
+  }
+}
 
-    @include tablets {
-      padding-top: rem(14px);
-      justify-content: space-between;
-      width: 100%;
-      flex-direction: row-reverse;
-      flex-wrap: nowrap;
-    }
-    @include phones {
-      justify-content: space-between;
-      background: linear-gradient(127.44deg, #FFF9F1 99.97%, rgba(255, 249, 241, 0) 102.12%);
-    }
+
+.header__bottom {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  @include tablets {
+    padding-top: rem(14px);
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  @include phones {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: linear-gradient(127.44deg, #FFF9F1 99.97%, rgba(255, 249, 241, 0) 102.12%);
+  }
+}
+
+.header__logo {
+  margin: rem(10px) rem(65px) rem(10px) 0;
+
+  @include tablets {
+    margin: rem(10px) 0 rem(10px) 0;
+  }
+
+  @include phones {
+    margin: 0;
   }
 }
 
 .header__menu {
-  margin-left: rem(70px);
 
-  @include phones {
-    margin-left: 0;
-  }
+  
 
 }
 
@@ -76,7 +92,7 @@
 }
 
 .header__phone {
-  margin-left: rem(60px);
+  margin-left: rem(20px);
 
   @include tablets {
     margin-left: 0;

@@ -4,6 +4,11 @@
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  margin: rem(20px) 0;
+
+  @include tablets {
+    margin: 0;
+  }
 
   @include phones {
     font-size: rem(14px);
@@ -16,5 +21,8 @@
 
 .worktime__title {
   font-weight: 500;
-  margin-right: rem(10px);
+}
+
+.worktime__schedule {
+  margin-left: rem(10px);
 }
