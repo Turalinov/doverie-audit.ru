@@ -52,7 +52,6 @@
 
 
 
-
 //   const animItems = document.querySelectorAll('._anim-items');
 
 

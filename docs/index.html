@@ -124,6 +124,61 @@
 
         </div>
       </section>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <h2 class="contacts__title">
+            Контакты
+          </h2>
+          <div class="contacts__info">
+            <div class="contacts__content">
+              <div class="contacts__col">
+                <div class="contacts__row">
+                  Время работы
+                </div>
+                <div class="contacts__row">
+                  Пн-Пт с 9-00 до 18-00
+                </div>
+              </div>
+              <div class="contacts__col">
+                <div class="contacts__row">
+                  Телефон
+                </div>
+                <div class="contacts__row">
+                  +7 (906) 737 23 29
+                </div>
+              </div>
+              <div class="contacts__col">
+                <div class="contacts__row">
+                  WhatsApp
+                </div>
+                <div class="contacts__row">
+                  +7 (906) 737 23 29
+                </div>
+              </div>
+              <div class="contacts__col">
+                <div class="contacts__row">
+                  Адрес офиса
+                </div>
+                <div class="contacts__row">
+                  141850, Московская обл, Дмитров г, Целеево д, дом 4А, помещение 12
+                </div>
+              </div>
+              <div class="contacts__col">
+                <div class="contacts__row">
+                  E-mail
+                </div>
+                <div class="contacts__row">
+                  auditdoverie@list.ru
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map" id="map" style="height: 50vh">
+          <!-- AIzaSyAb8fGh6vtNNHMeMXe6qR-oi8lp99TmNtM -->
+        </div> 
+        
+      </section>
     </div>
 
     <div class="footer">
@@ -167,6 +222,24 @@
     </div>
 
   </div>
+  <script>
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: {
+          lat: 56.24143606787736,
+          lng: 37.50175677878986
+        },
+        zoom: 15,
+      });
+    }
+  </script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb8fGh6vtNNHMeMXe6qR-oi8lp99TmNtM&callback=initMap&libraries=&v=weekly"
+    async>
+  </script>
   <script src="main.min.js"></script>
 </body>
 </html>
