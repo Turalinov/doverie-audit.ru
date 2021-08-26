@@ -5,25 +5,49 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: rem(16px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablets {
+    flex-direction: column;
+  }
+
 }
 .form__row {
   flex: 1;
 
 }
-.form__row+.form__row {
+.form__row + .form__row {
   margin-left: rem(16px);
+
+  @include tablets {
+    margin-left: 0;
+    margin-top: rem(10px);
+  }
+
+  @include phones {
+    margin-top: rem(7px);
+  }
 }
 .form__input {
-  border-radius: 10px;
-  padding: rem(19px) rem(23px);
 }
 .form__btn {
   width: 100%;
+
+  @include tablets {
+    padding: rem(19px) rem(32px);
+  }
+
 }
 
 .form__label {
   display: flex;
   @include noto(light);
+
+  @include tablets {
+    font-size: rem(14px);
+  }
 }
 .form__checkbox {
   display: none;
@@ -34,7 +58,10 @@
   border: 1px solid $white;
   border-radius: 5px;
   position: relative;
-  margin-right: 7px;
+  margin-right: rem(7px);
+  @include phones {
+    margin-right: rem(24px);
+  }
 }
 
 .form__checkbox:checked~.form__appearance:before {

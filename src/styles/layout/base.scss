@@ -98,6 +98,8 @@ input {
   background: #FFFFFF;
   @include noto(light);
   color: $black;
+  border-radius: 10px;
+  padding: rem(19px) rem(23px);
 }
 
 
@@ -130,9 +132,6 @@ h2 {
     font-size: rem(24px);
   }
 
-  @include phones {
-    font-size: rem(24px);
-  }
 }
 
 h3 {
