@@ -115,6 +115,8 @@ h6 {
 
 h1 {
   font-size: rem(36px);
+  @include teno;
+  text-transform: uppercase;
 
   @include tablets {
     font-size: rem(24px);
@@ -127,6 +129,8 @@ h1 {
 
 h2 {
   font-size: rem(36px);
+  @include teno;
+  text-transform: uppercase;
 
   @include tablets {
     font-size: rem(24px);
