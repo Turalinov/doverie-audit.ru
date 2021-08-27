@@ -20,11 +20,11 @@
 }
 
 .services__item--small {
-  flex: 1 1 40%;
+  flex: 0 1 rem(695px);
 }
 
 .services__item--small+.services__item--small {
-  margin-left: 40px;
+  margin-left: rem(40px);
 }
 
 .services__item + .services__item {
@@ -42,7 +42,7 @@
 
 
 .services__col + .services__col {
-  margin-left: rem(60px);
+  margin-left: rem(110px);
 }
 
 .sevices__preview {
