@@ -72,7 +72,7 @@ button {
 .btn {
   color: $white;
   background-color: $brown;
-  border-radius:  10px;
+  border-radius: 10px;
   padding: rem(19px) rem(42px);
   font-size: rem(18px);
   text-transform: uppercase;
@@ -84,8 +84,9 @@ button {
   }
 
   &:focus {
-     border-color: $brown-dark;
+    border-color: $brown-dark;
   }
+
   &:hover {
     background-color: $brown-hover;
   }
@@ -141,15 +142,36 @@ h2 {
 h3 {
   font-size: rem(24px);
   font-weight: 600;
+
+  @include tablets {
+    font-size: rem(22px);
+  }
+
+  @include phones {
+    font-size: rem(18px);
+  }
 }
+
 h4 {
   font-size: rem(22px);
   font-weight: 500;
+
+  @include tablets {
+    font-size: rem(22px);
+  }
+
+  @include phones {
+    font-size: rem(16px);
+  }
 }
 
 h5 {
   font-size: rem(18px);
   font-weight: 500;
+
+  @include phones {
+    font-size: rem(16px);
+  }
 }
 
 p {
@@ -178,4 +200,3 @@ img {
   max-width: 1430px;
   margin: 0 auto;
 }
-

@@ -1,15 +1,35 @@
 .services {
   background-color: #fff;
   padding: rem(100px) 0;
+
+  @include tablets {
+    padding: rem(75px) 0;
+  }
+
+  @include phones {
+    padding: rem(43px) 0 rem(75px);
+  }
 }
+
 .services__title {
   text-align: center;
   margin-bottom: rem(48px);
+
+  @include tablets {
+    margin-bottom: rem(38px);
+  }
+
+  @include phones {
+    margin-bottom: rem(24px);
+  }
 }
+
 .services__list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 rem(-20px);
 }
+
 .services__item {
   background-color: #fff;
   box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.1);
@@ -17,51 +37,120 @@
   border-radius: 10px;
   display: flex;
   flex: 1 1 100%;
+  margin: 0 rem(20px);
+
+  @include tablets {
+    flex-direction: column;
+  }
+
+  @include phones {
+    padding: rem(22px) rem(15px);
+  }
+
 }
 
 .services__item--small {
-  flex: 0 1 rem(695px);
+  flex: 1 1 44%;
+
+  @include tablets {
+    flex-basis: 100%;
+  }
 }
 
-.services__item--small+.services__item--small {
-  margin-left: rem(40px);
-}
+.services__item--small+.services__item--small {}
 
-.services__item + .services__item {
+.services__item+.services__item {
   margin-top: rem(40px);
+
+  @include tablets {
+    margin-top: rem(26px);
+  }
+
 }
+
 .services__col {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.services__col--lower{
+
+.services__col--lower {
   justify-content: flex-end;
+
+  @include tablets {
+    justify-content: initial;
+  }
 }
 
 
 
-.services__col + .services__col {
+.services__col+.services__col {
   margin-left: rem(110px);
+
+  @include tablets {
+    margin-left: 0;
+    margin-top: rem(58px);
+  }
+
+  @include phones {
+    margin-top: 0;
+  }
+}
+
+
+.services__item--opened .services__col + .services__col {
+
+  @include phones {
+    margin-top: rem(15px);
+  }
 }
 
 .sevices__preview {
   margin-bottom: rem(15px);
 }
+
 .services__preview-title {
   @include noto(semibold);
   text-transform: uppercase;
   color: $brown;
   margin-bottom: rem(19px);
+
+  @include phones {
+    margin-bottom: rem(7px);
+  }
 }
+
 .services__preview-desc {
   font-size: rem(18px);
+
+  @include phones {
+    font-size: rem(14px);
+  }
 }
+
 .services__preview-desc--bold {
   @include noto(medium);
 }
+
+.services__info--none {
+
+  @include phones {
+    display: none;
+  }
+}
+
+
+
 .services__info p {
   margin-bottom: rem(21px);
+  @include tablets {
+    margin-bottom: rem(27px);
+  }
+
+  @include phones {
+    font-size: rem(14px);
+    margin-bottom: rem(9px);
+  }
 }
 
 .services__info p:last-child {
@@ -71,29 +160,48 @@
 
 .services__info p.large {
   font-size: rem(18px);
-  margin-bottom: rem(21px);
+
+  @include phones {
+    font-size: rem(14px);
+  }
 }
 
 .services__info h4 {
   margin-bottom: rem(16px);
+  @include tablets {
+    margin-bottom: rem(15px);
+  }
+
+  @include phones {
+    margin-bottom: rem(7px);
+  }
 }
 
 .services__info h5 {
   margin-bottom: rem(21px);
+
+  @include phones {
+    margin-bottom: rem(17px);
+  }
 }
 
 .services__info ul {
   margin-bottom: rem(21px);
+  @include phones {
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+  }
 }
 
 .services__info ul:last-child {
   margin-bottom: 0;
 }
 
-.services__info ul li{
+.services__info ul li {
   position: relative;
   padding-left: rem(33px);
 }
+
 .services__info ul li::before {
   position: absolute;
   background-color: #7bbdc2;
@@ -106,7 +214,7 @@
   top: 10%;
 }
 
-.services__info ul li + li {
+.services__info ul li+li {
   margin-top: rem(17px);
 }
 
@@ -115,7 +223,19 @@
   padding: rem(55px) rem(65px);
   background-color: $brown-light;
   border-radius: 5px;
+
+  @include phones {
+    font-size: rem(14px);
+    padding: rem(38px) rem(19px);
+
+  }
 }
+
 .services__btn {
   display: none;
+  @include phones {
+    display: inline-block;
+    max-width: rem(167px);
+    margin-top: 17px;
+  }
 }
