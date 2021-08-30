@@ -29,19 +29,19 @@
 
       e.preventDefault();
 
-      // let blockId = menuLink.getAttribute('href')
-      // if (blockId != "#") {
-      //     document.querySelector(blockId).scrollIntoView({
-      //       behavior: 'smooth',
-      //     })
-      // }
+      let blockId = menuLink.getAttribute('href')
+      if (blockId != "#") {
+          document.querySelector(blockId).scrollIntoView({
+            behavior: 'smooth',
+          })
+      }
 
       //для мобилки закрытия меню берем родитель меню
       const parentMenu = findParent(menuLink, '.menu__list--adaptive');
       if(parentMenu !== false) {
         if (parentMenu.classList.contains('is-open')) {
           parentMenu.classList.toggle('is-open');
-          // body.classList.toggle('body--locked')
+          
         }
       }
 
