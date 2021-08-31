@@ -88,7 +88,8 @@ button {
   }
 }
 
-input:not([type=checkbox]):not([type=radio]) {
+input:not([type=checkbox]):not([type=radio]),
+select {
   width: 100%;
   outline: none;
   border: none;
@@ -97,7 +98,12 @@ input:not([type=checkbox]):not([type=radio]) {
   color: $black;
   border-radius: 10px;
   padding: rem(19px) rem(23px);
+  border: 1px solid transparent;
+  &:focus {
+    border-color: $brown-dark;
+  }
 }
+
 
 
 h1,

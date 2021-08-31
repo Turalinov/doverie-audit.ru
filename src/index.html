@@ -337,7 +337,6 @@
           <div class="form price__form">
             <form action="#" class="form__elem" id="form__quiz">
               <ul class="price__quiz quiz">
-
                 <li class="quiz__item" id="quiz__item1">
 
                   <div class="quiz__welcome welcome">
@@ -461,8 +460,8 @@
                               Совмещение режимов, указать какие
                             </label>
                           </div>
-                          <div class="collection__elem">
-                            <input class="form__input collection__input" type="text" name="">
+                          <div class="collection__elem collection__elem--large">
+                            <input class="form__input collection__input" type="text" name="combination_modes">
                           </div>
                         </div>
                       </div>
@@ -475,7 +474,517 @@
 
                 </li>
 
+                <li class="quiz__item" id="quiz__item2">
 
+                  <div class="quiz__collection collection">
+                    <div class="collection__top">
+                      <div class="collection__row">
+                        <div class="collection__col">
+                          <h3 class="collection__title">4. Сколько видов деятельности осуществляет организация?</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="activities" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              1
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="activities" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              2-3
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="activities" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              4 и более
+                            </label>
+                          </div>
+                          <div class="collection__elem  collection__elem--small">
+                            <input class="form__input collection__input" type="text" name="activities__additional">
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">5. Есть ли обособленные подразделения (филиалы,
+                            представительства)?</h3>
+                          <div class="collection__elem">
+
+                            <label class="radio">
+                              <input type="radio" name="branches" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              Нет
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="branches" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              Есть не выделенные на самостоятельный баланс
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="branches" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              Есть выделенные на самостоятельный баланс
+                            </label>
+
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">6. В каком регионе организация ведет основную деятельность?</h3>
+                          <div class="collection__elem">
+
+                            <select name="region" class="collection__select">
+                              <option disabled>Выберите регион</option>
+                              <option value="0">Амурская область</option>
+                              <option value="1">Архангельская область</option>
+                              <option value="18" selected>Московская область</option>
+                            </select>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="collection__row">
+                        <div class="collection__col">
+                          <h3 class="collection__title">7. Кроме данного региона, требуется ли выезд аудитора в другие
+                            регионы?</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="departure" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              Нет
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="departure" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              Требуется, указать ниже
+                            </label>
+                          </div>
+                          <div class="collection__elem  collection__elem--small">
+                            <input class="form__input collection__input" type="text" name="departure__additional">
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">8. Численность работников организации (указать количество
+                            человек)</h3>
+                          <div class="collection__elem  collection__elem--main">
+                            <input class="form__input collection__input" type="text" name="number__employees">
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">9. Количество основных средств:</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="number__assets" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              До 20 ед.
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="number__assets" class="radio___elem" value="1" checked>
+                              <div class="radio__aperiance"></div>
+                              20-100 ед.
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="number__assets" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              100-200 ед.
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="number__assets" class="radio___elem" value="3">
+                              <div class="radio__aperiance"></div>
+                              более 200 ед.
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collection__bottom">
+                      <button type="button" class="btn collection__btn" id="collection__btn2">Дальше</button>
+                    </div>
+                  </div>
+
+
+                </li>
+
+                <li class="quiz__item" id="quiz__item3">
+
+                  <div class="quiz__collection collection">
+                    <div class="collection__top">
+                      <div class="collection__row">
+                        <div class="collection__col">
+                          <h3 class="collection__title">
+                            10. «Поступление товаров и услуг» – количество операций за аудируемый период:
+                          </h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="receipt" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              до 100 операций
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="receipt" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              100-500 операций
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="receipt" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              500-1000 операций
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="receipt" class="radio___elem" value="3">
+                              <div class="radio__aperiance"></div>
+                              более 1000 операций
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">
+                            11. Примерное количество ваших поставщиков (подрядчиков):
+                          </h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="contractor" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              до 10
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="contractor" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              10-50
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="contractor" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              более 50
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">12. «Реализация товаров и услуг» - количество операций за
+                            аудируемый период:
+                          </h3>
+                          <div class="collection__elem">
+
+                            <label class="radio">
+                              <input type="radio" name="contractor" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              до 100 операций
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="contractor" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              100-500 операций
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="contractor" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              500-1000 операций
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="contractor" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              более 1000 операций
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="collection__row">
+                        <div class="collection__col">
+                          <h3 class="collection__title">13. Количество покупателей, заказчиков (без учета розницы):</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="buyers" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              мало или только розница (1-20)
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="buyers" class="radio___elem" value="1">
+                              <div class="radio__aperiance"></div>
+                              немного (20-50)
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="buyers" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              достаточно (50-200)
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="buyers" class="radio___elem" checked value="3">
+                              <div class="radio__aperiance"></div>
+                              много (200-1000)
+                            </label>
+                            <label class="radio"></label>
+                            <input type="radio" name="buyers" class="radio___elem" value="4">
+                            <div class="radio__aperiance"></div>
+                            очень много ( более 1000)
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">14. Финансовые вложения:</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="investments" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              Отсутвуют или несущественны
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="investments" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              Существенная величина
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">15. Организация привлекает займы, кредиты?</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="credits" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              займы, кредиты несущественны
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="credits" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              существенная величина
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collection__bottom">
+                      <button type="button" class="btn collection__btn" id="collection__btn3">Дальше</button>
+                    </div>
+                  </div>
+
+
+                </li>
+                <li class="quiz__item" id="quiz__item4">
+
+                  <div class="quiz__collection collection">
+                    <div class="collection__top">
+                      <div class="collection__row">
+                        <div class="collection__col">
+                          <h3 class="collection__title">
+                            16. Организация осуществляет экспортно-импортные операции?
+                          </h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="export-import" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              экспорт, импорт не осуществляется
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="export-import" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              осуществляется экспорт
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="export-import" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              осуществляется импорт
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="export-import" class="radio___elem" value="3">
+                              <div class="radio__aperiance"></div>
+                              осуществляется экспорт и импорт
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">
+                            17. Остаток МПЗ на конец года составляет существенную величину (более 5% от валюты баланса)?
+                          </h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="mpz" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              остатки МПЗ несущественны
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="mpz" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              существенный остаток МПЗ
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">18. Способ ведения бухгалтерии</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="accounting" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              1С
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="accounting" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              Прочие бухгалтерские программы, указать ниже
+                            </label>
+                          </div>
+                          <div class="collection__elem  collection__elem--small">
+                            <input class="form__input collection__input" type="text" name="accounting__additional">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="collection__row">
+                        <div class="collection__col">
+                          <h3 class="collection__title">19. Проводился ли аудит за предыдущий год?</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="audit" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              нет
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="audit" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              да
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">
+                            20. Как давно была выездная налоговая проверка вашей фирмы?
+                          </h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="tax-audit" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              Последние 3 года не было
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="tax-audit" class="radio___elem" value="1">
+                              <div class="radio__aperiance"></div>
+                              была 2 года назад
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="tax-audit" class="radio___elem" checked value="2">
+                              <div class="radio__aperiance"></div>
+                              была год назад
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">21. Когда последний раз менялся главный бухгалтер (кроме случаев
+                            назначения другого лица из вашей же бухгалтерии)?</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="change" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              Последние 2 года не менялся
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="change" class="radio___elem" value="1">
+                              <div class="radio__aperiance"></div>
+                              менялся примерно год назад
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="change" class="radio___elem" checked value="2">
+                              <div class="radio__aperiance"></div>
+                              менялся менее чем год назад
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collection__bottom">
+                      <button type="button" class="btn collection__btn" id="collection__btn4">Дальше</button>
+                    </div>
+                  </div>
+
+
+                </li>
+                <li class="quiz__item" id="quiz__item5">
+
+                  <div class="quiz__collection collection">
+                    <div class="collection__top">
+                      <div class="collection__row">
+                        <div class="collection__col">
+                          <h3 class="collection__title">
+                            22. Какую услугу от аудиторов вы хотели бы получить?
+                          </h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="service" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              Официальное аудиторское заключение о достоверности финансовой отчетности
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="service" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              Официальное аудиторское заключение о достоверности финансовой отчетности + детальная
+                              проверка всех вопросов налогообложения
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="service" class="radio___elem" value="2">
+                              <div class="radio__aperiance"></div>
+                              Проверка правильности налогового и бухгалтерского учета (отчет без официального
+                              аудиторского заключения)
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">23. Аудиторская проверка является обязательной для вашей
+                            организации?</h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="required" class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              да
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="required" class="radio___elem" checked value="1">
+                              <div class="radio__aperiance"></div>
+                              нет
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="collection__row">
+                        <div class="collection__col">
+                          <h3 class="collection__title">24. План аудиторских проверок по периодам </h3>
+                          <div class="collection__elem">
+                            <label class="radio">
+                              <input type="radio" name="plan " class="radio___elem" value="0">
+                              <div class="radio__aperiance"></div>
+                              Одна проверка по окончанию года
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="plan " class="radio___elem" value="1">
+                              <div class="radio__aperiance"></div>
+                               Две проверки (по полугодиям<br>или 9 мес. + 4-й кв.)
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="plan " class="radio___elem" checked value="2">
+                              <div class="radio__aperiance"></div>
+                              Поквартальные проверки
+                            </label>
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">Сроки проверки (предпочтительные даты аудиторской проверки и
+                            выдачи аудиторского заключения)</h3>
+                          <div class="collection__elem  collection__elem--main">
+                            <input class="form__input collection__input" type="text" name="timing">
+                          </div>
+                        </div>
+                        <div class="collection__col">
+                          <h3 class="collection__title">Период проверки</h3>
+                          <div class="collection__elem  collection__elem--main">
+                            <input class="form__input collection__input" type="text" name="period">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collection__bottom">
+                      <button type="button" class="btn collection__btn" id="collection__btn5">Дальше</button>
+                    </div>
+                  </div>
+
+
+                </li>
               </ul>
             </form>
           </div>

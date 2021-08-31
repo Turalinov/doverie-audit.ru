@@ -1,5 +1,7 @@
 .radio {
   display: block;
+  font-size: rem(18px);
+  line-height: 1.5;
 }
 .radio + .radio {
   margin-top: 23px;
