@@ -1,0 +1,45 @@
+.price {
+  padding: rem(100px) 0 rem(152px);
+  background-image: url("images/price-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include tablets {
+    padding: rem(75px) 0 rem(75px);
+  }
+
+  @include phones {
+    padding: rem(55px) 0 rem(88px);
+  }
+}
+
+.price__title {
+  text-align: center;
+  margin-bottom: rem(11px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
+
+  @include phones {
+    margin-bottom: rem(8px);
+  }
+}
+
+.price__desc {
+  font-size: rem(18px);
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto rem(42px);
+  
+  @include tablets {
+    max-width: 637px;
+    margin-bottom: rem(143px);
+  }
+
+  @include phones {
+    font-size: rem(16px);
+    max-width: initial;
+    margin-bottom: rem(26px);
+  }
+}
