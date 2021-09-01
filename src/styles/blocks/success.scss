@@ -1,0 +1,31 @@
+.success {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: rem(60px) rem(80px) rem(55px) rem(80px);
+  max-width: rem(589px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.success__title {
+  color: $quiz-color;
+  @include noto(semibold);
+  font-size: rem(36px);
+  margin-bottom: rem(12px);
+}
+.success__desc {
+  font-size: rem(24px);
+  margin-bottom: rem(25px);
+}
+.success__check {
+  background-color: $turquoise;
+  width: rem(95px);
+  height: rem(95px);
+  border-radius: 50%;
+  background-image: url('images/success.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
