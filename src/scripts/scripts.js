@@ -1,7 +1,6 @@
 (function() {
 
   let a = 11;
-  console.log('a', a);
   
   const menuToggle = document.querySelector('.menu__toggle');
   const menu = document.querySelector('.menu__list--adaptive');
@@ -349,6 +348,8 @@
 
 //     })
 //   })
+
+
 
 
 

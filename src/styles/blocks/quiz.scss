@@ -1,11 +1,24 @@
 .quiz {
   display: flex;
   flex-direction: column;
+  position: relative;
+  min-width: 430px;
 }
 
 .quiz__item {
-
+  position: absolute;
+  left: 200%;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
 }
+
+.quiz__item--active {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+}
+
 .quiz__item--success{
   background-color: $turquoise;
   border-radius: 10px;
@@ -14,7 +27,7 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: rem(908px);
-  position: relative;
+  width: 100%;
 }
 .quiz__success {
   position: absolute;

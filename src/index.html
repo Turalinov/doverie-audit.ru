@@ -337,7 +337,7 @@
           <div class="form price__form">
             <form action="#" class="form__elem" id="form__quiz">
               <ul class="price__quiz quiz">
-                <li class="quiz__item" id="quiz__item1">
+                <li class="quiz__item quiz__item--active" id="quiz__item1">
 
                   <div class="quiz__welcome welcome">
                     <h3 class="welcome__title">Чтобы узнать точную стоимость наших услуг, вы можете
@@ -461,19 +461,21 @@
                             </label>
                           </div>
                           <div class="collection__elem collection__elem--large">
-                            <input class="form__input collection__input" type="text" name="combination_modes">
+                            <input class="form__input collection__input" type="text" name="combination_modes" disabled>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="collection__bottom">
+                      <div class="collection__error">
+                        <div class="collection__error-content">Заполните все поля</div>
+                      </div>
                       <button type="button" class="btn collection__btn" id="collection__btn1">Дальше</button>
                     </div>
                   </div>
 
 
                 </li>
-
                 <li class="quiz__item" id="quiz__item2">
 
                   <div class="quiz__collection collection">
@@ -602,7 +604,6 @@
 
 
                 </li>
-
                 <li class="quiz__item" id="quiz__item3">
 
                   <div class="quiz__collection collection">
@@ -759,7 +760,6 @@
 
                 </li>
                 <li class="quiz__item" id="quiz__item4">
-
                   <div class="quiz__collection collection">
                     <div class="collection__top">
                       <div class="collection__row">
@@ -986,7 +986,6 @@
 
                 </li>
                 <li class="quiz__item" id="quiz__item6">
-
                   <div class="quiz__collection collection">
                     <div class="collection__top">
                       <div class="collection__row">
@@ -1074,10 +1073,10 @@
                     </div>
                     <div class="collection__bottom collection__bottom--flex">
                       <div class="collection__bottom-left">
-                        <button type="button" class="btn btn--large collection__btn--bottom"
-                          id="collection__btn6">Отправить</button><label
+                        <button type="submit" class="btn btn--large collection__btn--main"
+                          id="collection__btn-main">Отправить</button><label
                           class="form__label">
-                          <input type="checkbox" class="form__checkbox" name="politics" checked="" disabled="">
+                          <input type="check  box" class="form__checkbox" name="politics" checked="" disabled="">
                           <div class="form__appearance"></div>Даю согласие на обработку<br>персональных данных
                         </label>
                       </div>
@@ -1093,9 +1092,8 @@
 
 
                 </li>
-
                 <li class="quiz__item quiz__item--success" id="quiz__item7">
-
+                  
                     <div class="success quiz__success">
                       <div class="success__title">
                         Спасибо
@@ -1151,7 +1149,7 @@
               </div>
             </form>
 
-            <div class="success form__success">
+            <div class="success form__success" id="form-success">
               <div class="success__title">
                 Спасибо
               </div>
