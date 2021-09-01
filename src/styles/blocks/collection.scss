@@ -11,6 +11,32 @@
   flex: 1;
   margin-bottom: rem(40px);
 }
+
+.collection__bottom--flex {
+  display: flex;
+}
+.collection__bottom-left {
+  flex: 1;
+}
+.collection__bottom-right {
+  flex: 2;
+}
+.collection__bottom-info {
+  padding: rem(30px) rem(122px);
+  background: #fff9f1;
+  border-radius: 6px;
+}
+
+
+.collection__bottom--flex .collection__bottom--flex .form__appearance {
+  border-color: rgba(14, 15, 14, 1);
+}
+
+.collection__bottom--flex .form__appearance:before {
+  background-image: url(images/check-dark.svg);
+}
+
+
 .collection__desc {
   font-size: rem(24px);
   max-width: rem(817px);
@@ -34,9 +60,22 @@
   color: $quiz-color;
   margin-bottom: rem(23px);
 }
+
+.collection__title--centered {
+  text-align: center;
+}
+
+.collection__subtitle {
+  text-align: center;
+  max-width: rem(863px);
+  margin: 0 auto rem(35px);
+}
+
 .collection__elem+.collection__elem {
   margin-top: rem(14px);
 }
+
+
 
 .collection__elem--large {
   padding-left: rem(40px);
@@ -50,6 +89,24 @@
 
 .collection__elem--main {
   padding-right: 40%;
+}
+
+.collection__elem--high {
+  display: flex;
+}
+.collection__elem--high+.collection__elem--high {
+  margin-top: rem(30px);
+}
+.collection__block {
+  flex: 1;
+}
+
+.collection__block+.collection__block {
+  margin-left: rem(24px);
+}
+
+.collection__block-title {
+  margin-bottom: rem(13px);
 }
 
 input.collection__input.form__input,
@@ -74,4 +131,8 @@ select.collection__select {
     color: #fff;
     border: 1.5px solid transparent;
   }
+}
+
+.collection__btn--bottom {
+  margin-bottom: rem(15px);
 }

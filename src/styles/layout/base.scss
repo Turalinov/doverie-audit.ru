@@ -20,7 +20,6 @@ body {
   -webkit-font-smoothing: antialised;
   -moz-osx-font-smoothing: grayscale;
   @include noto;
-  font-weight: 400;
   color: $black;
 }
 
@@ -73,6 +72,7 @@ button {
   font-size: rem(18px);
   text-transform: uppercase;
   border: 1px solid transparent;
+  @include noto(bold);
 
   @include tablets {
     font-size: rem(16px);
@@ -88,11 +88,15 @@ button {
   }
 }
 
+
+.btn--large {
+  padding: rem(19px) rem(99px);
+}
+
 input:not([type=checkbox]):not([type=radio]),
 select {
   width: 100%;
   outline: none;
-  border: none;
   background: #FFFFFF;
   @include noto(light);
   color: $black;
