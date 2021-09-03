@@ -337,7 +337,7 @@
           <div class="form price__form">
             <form action="#" class="form__elem" id="form__quiz">
               <ul class="price__quiz quiz">
-                <li class="quiz__item quiz__item--active" id="quiz__item1">
+                <li class="quiz__item  quiz__item--active" id="quiz__item1">
 
                   <div class="quiz__welcome welcome">
                     <h3 class="welcome__title">Чтобы узнать точную стоимость наших услуг, вы можете
@@ -501,7 +501,8 @@
                             </label>
                           </div>
                           <div class="collection__elem  collection__elem--small">
-                            <input class="form__input collection__input" type="text" name="activities__additional">
+                            <input class="form__input collection__input" type="text" name="activities__additional"
+                              disabled>
                           </div>
                         </div>
                         <div class="collection__col">
@@ -515,12 +516,12 @@
                               Нет
                             </label>
                             <label class="radio">
-                              <input type="radio" name="branches" class="radio___elem" checked value="1">
+                              <input type="radio" name="branches" class="radio___elem" value="1">
                               <div class="radio__aperiance"></div>
                               Есть не выделенные на самостоятельный баланс
                             </label>
                             <label class="radio">
-                              <input type="radio" name="branches" class="radio___elem" value="2">
+                              <input type="radio" name="branches" class="radio___elem" checked value="2">
                               <div class="radio__aperiance"></div>
                               Есть выделенные на самостоятельный баланс
                             </label>
@@ -532,10 +533,6 @@
                           <div class="collection__elem">
 
                             <select name="region" class="collection__select">
-                              <option disabled>Выберите регион</option>
-                              <option value="0">Амурская область</option>
-                              <option value="1">Архангельская область</option>
-                              <option value="18" selected>Московская область</option>
                             </select>
 
                           </div>
@@ -548,7 +545,7 @@
                             регионы?</h3>
                           <div class="collection__elem">
                             <label class="radio">
-                              <input type="radio" name="departure" class="radio___elem" value="0">
+                              <input type="radio" name="departure" class="radio___elem"  value="0">
                               <div class="radio__aperiance"></div>
                               Нет
                             </label>
@@ -597,8 +594,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="collection__bottom">
+                    <div class="collection__bottom collection__bottom--flex-center">
                       <button type="button" class="btn collection__btn" id="collection__btn2">Дальше</button>
+                      <div class="collection__error">
+                        Заполните выделенные поля
+                      </div>
                     </div>
                   </div>
 
@@ -647,12 +647,12 @@
                               до 10
                             </label>
                             <label class="radio">
-                              <input type="radio" name="contractor" class="radio___elem" checked value="1">
+                              <input type="radio" name="contractor" class="radio___elem" value="1">
                               <div class="radio__aperiance"></div>
                               10-50
                             </label>
                             <label class="radio">
-                              <input type="radio" name="contractor" class="radio___elem" value="2">
+                              <input type="radio" name="contractor" class="radio___elem" checked value="2">
                               <div class="radio__aperiance"></div>
                               более 50
                             </label>
@@ -665,22 +665,22 @@
                           <div class="collection__elem">
 
                             <label class="radio">
-                              <input type="radio" name="contractor" class="radio___elem" value="0">
+                              <input type="radio" name="implementation" class="radio___elem" value="0">
                               <div class="radio__aperiance"></div>
                               до 100 операций
                             </label>
                             <label class="radio">
-                              <input type="radio" name="contractor" class="radio___elem" checked value="1">
+                              <input type="radio" name="implementation" class="radio___elem" checked value="1">
                               <div class="radio__aperiance"></div>
                               100-500 операций
                             </label>
                             <label class="radio">
-                              <input type="radio" name="contractor" class="radio___elem" value="2">
+                              <input type="radio" name="implementation" class="radio___elem" value="2">
                               <div class="radio__aperiance"></div>
                               500-1000 операций
                             </label>
                             <label class="radio">
-                              <input type="radio" name="contractor" class="radio___elem" value="2">
+                              <input type="radio" name="implementation" class="radio___elem" value="2">
                               <div class="radio__aperiance"></div>
                               более 1000 операций
                             </label>
@@ -752,8 +752,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="collection__bottom">
+                    <div class="collection__bottom collection__bottom--flex-center">
                       <button type="button" class="btn collection__btn" id="collection__btn3">Дальше</button>
+                      <div class="collection__error">
+                        Заполните выделенные поля
+                      </div>
                     </div>
                   </div>
 
@@ -769,22 +772,22 @@
                           </h3>
                           <div class="collection__elem">
                             <label class="radio">
-                              <input type="radio" name="export-import" class="radio___elem" value="0">
+                              <input type="radio" name="export_import" class="radio___elem" value="0">
                               <div class="radio__aperiance"></div>
                               экспорт, импорт не осуществляется
                             </label>
                             <label class="radio">
-                              <input type="radio" name="export-import" class="radio___elem" checked value="1">
+                              <input type="radio" name="export_import" class="radio___elem" checked value="1">
                               <div class="radio__aperiance"></div>
                               осуществляется экспорт
                             </label>
                             <label class="radio">
-                              <input type="radio" name="export-import" class="radio___elem" value="2">
+                              <input type="radio" name="export_import" class="radio___elem" value="2">
                               <div class="radio__aperiance"></div>
                               осуществляется импорт
                             </label>
                             <label class="radio">
-                              <input type="radio" name="export-import" class="radio___elem" value="3">
+                              <input type="radio" name="export_import" class="radio___elem" value="3">
                               <div class="radio__aperiance"></div>
                               осуществляется экспорт и импорт
                             </label>
@@ -811,7 +814,7 @@
                           <h3 class="collection__title">18. Способ ведения бухгалтерии</h3>
                           <div class="collection__elem">
                             <label class="radio">
-                              <input type="radio" name="accounting" class="radio___elem" value="0">
+                              <input type="radio" name="accounting" class="radio___elem"  value="0">
                               <div class="radio__aperiance"></div>
                               1С
                             </label>
@@ -849,17 +852,17 @@
                           </h3>
                           <div class="collection__elem">
                             <label class="radio">
-                              <input type="radio" name="tax-audit" class="radio___elem" value="0">
+                              <input type="radio" name="tax_audit" class="radio___elem" value="0">
                               <div class="radio__aperiance"></div>
                               Последние 3 года не было
                             </label>
                             <label class="radio">
-                              <input type="radio" name="tax-audit" class="radio___elem" value="1">
+                              <input type="radio" name="tax_audit" class="radio___elem" value="1">
                               <div class="radio__aperiance"></div>
                               была 2 года назад
                             </label>
                             <label class="radio">
-                              <input type="radio" name="tax-audit" class="radio___elem" checked value="2">
+                              <input type="radio" name="tax_audit" class="radio___elem" checked value="2">
                               <div class="radio__aperiance"></div>
                               была год назад
                             </label>
@@ -888,8 +891,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="collection__bottom">
+                    <div class="collection__bottom collection__bottom--flex-center">
                       <button type="button" class="btn collection__btn" id="collection__btn4">Дальше</button>
+                      <div class="collection__error">
+                        Заполните выделенные поля
+                      </div>
                     </div>
                   </div>
 
@@ -978,8 +984,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="collection__bottom">
+                    <div class="collection__bottom collection__bottom--flex-center">
                       <button type="button" class="btn collection__btn" id="collection__btn5">Последний шаг</button>
+                      <div class="collection__error">
+                        Заполните выделенные поля
+                      </div>
                     </div>
                   </div>
 
@@ -1073,10 +1082,14 @@
                     </div>
                     <div class="collection__bottom collection__bottom--flex">
                       <div class="collection__bottom-left">
-                        <button type="submit" class="btn btn--large collection__btn--main"
-                          id="collection__btn-main">Отправить</button><label
+                        <button type="button" class="btn btn--large collection__btn collection__btn--main"
+                          id="collection__btn6">Отправить</button>
+                          <div class="collection__error">
+                            Заполните выделенные поля
+                          </div>
+                          <label
                           class="form__label">
-                          <input type="check  box" class="form__checkbox" name="politics" checked="" disabled="">
+                          <input type="checkbox" class="form__checkbox" name="politics" checked disabled>
                           <div class="form__appearance"></div>Даю согласие на обработку<br>персональных данных
                         </label>
                       </div>
@@ -1092,7 +1105,7 @@
 
 
                 </li>
-                <li class="quiz__item quiz__item--success" id="quiz__item7">
+                <li class="quiz__item" id="quiz__item7">
                   
                     <div class="success quiz__success">
                       <div class="success__title">

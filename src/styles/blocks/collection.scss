@@ -125,7 +125,23 @@ select.collection__select {
 }
 input.collection__input--error.form__input {
   border-color: rgba(255, 0, 0, 0.4);
+  background-color: #efefef;
+  animation: eye 2s linear infinite;
 }
+
+@keyframes eye {
+  20% {
+     border-color: transparent;
+     background-color: #efefef;
+  }
+
+  80% {
+    border-color:rgba(255, 0, 0, 0.4);
+    background-color: rgba(255, 0, 0, 0.4);
+  }
+}
+
+
 input.collection__input.form__input:disabled {
   background-color: rgba(#efefef, 0.5);
 }
@@ -146,7 +162,18 @@ input.collection__input.form__input:disabled {
 }
 
 .collection__btn--main {
+  color: $white;
+  background-color: $brown;
+  border-radius: 10px;
+  padding: rem(19px) rem(99px);
+  border: 1px solid transparent;
   margin-bottom: rem(15px);
+
+  &:hover {
+    background-color: $brown-hover;
+    color: $white;
+    border: 1px solid transparent;
+  }
 }
 
 
