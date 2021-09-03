@@ -12,7 +12,6 @@
     // body.classList.toggle('body--locked')
   })
 
-
   function findParent(el, selector) {
     return el.closest(selector) !== null ? el.closest(selector) : false;
   }

@@ -15,6 +15,12 @@
 .collection__bottom--flex {
   display: flex;
 }
+
+.collection__bottom--flex-center {
+  display: flex;
+  align-items: center;
+}
+
 .collection__bottom-left {
   flex: 1;
 }
@@ -117,11 +123,12 @@ select.collection__select {
   border-radius: rem(6px);
   background-color: #efefef;
 }
-
+input.collection__input--error.form__input {
+  border-color: rgba(255, 0, 0, 0.4);
+}
 input.collection__input.form__input:disabled {
   background-color: rgba(#efefef, 0.5);
 }
-
 
 
 
@@ -143,7 +150,12 @@ input.collection__input.form__input:disabled {
 }
 
 
-.collection__error-content {
+.collection__error {
   display: none;
-  color: red;
+  margin-left: rem(30px);
+  color: rgba(255, 0, 0, 0.4);
+}
+
+.collection__error--active {
+  display: block;
 }
