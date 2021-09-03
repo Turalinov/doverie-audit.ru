@@ -6,19 +6,41 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  @include tablets {
+    padding: rem(50px) rem(100px);
+  }
+
+  @include phones {
+    padding: rem(35px) rem(10px);
+  }
 }
 .collection__top {
   flex: 1;
   margin-bottom: rem(40px);
+  @include tablets {
+    margin-bottom: rem(35px);
+  }
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
 }
 
 .collection__bottom--flex {
   display: flex;
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .collection__bottom--flex-center {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .collection__bottom-left {
@@ -32,6 +54,16 @@
   background: #fff9f1;
   border-radius: 6px;
   font-size: rem(18px);
+  @include tablets {
+    padding: rem(40px);
+    margin-top: rem(35px);
+  }
+
+  @include phones {
+    font-size: rem(16px);
+    padding: rem(20px);
+    margin-top: rem(20px);
+  }
 }
 
 
@@ -48,24 +80,67 @@
   font-size: rem(24px);
   max-width: rem(817px);
   margin-bottom: rem(51px);
+  @include tablets {
+    font-size: rem(20px);
+    margin-bottom: rem(35px);
+  }
+
+  @include phones {
+    font-size: rem(16px);
+    margin-bottom: rem(20px);
+  }
 }
 .collection__row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 rem(-14px);
+  
+  @include tablets {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 
 .collection__row+.collection__row {
   margin-top: 70px;
+  @include tablets {
+    margin-top: rem(35px);
+  }
+
+  @include phones {
+    margin-top: rem(20px);
+  }
 }
 .collection__col {
   flex: 1;
   margin: 0 rem(14px);
+
+  @include tablets {
+    margin: 0;
+  }
+  
+}
+
+.collection__col+.collection__col {
+  @include tablets {
+    margin-top: rem(35px);
+  }
 }
 .collection__title {
   color: $quiz-color;
   margin-bottom: rem(23px);
+
+  @include tablets {
+    font-size: rem(18px);
+    margin-bottom: rem(15px);
+  }
+
+  @include phones {
+    font-size: rem(16px);
+    margin-bottom: rem(20px);
+  }
+  
 }
 
 .collection__title--centered {
@@ -87,19 +162,35 @@
 .collection__elem--large {
   padding-left: rem(40px);
   padding-right: 20%;
+  @include tablets {
+    padding-right: 0;
+  }
 }
+
 
 .collection__elem--small {
   padding-left: rem(40px);
   padding-right: 40%;
+
+  @include tablets {
+    padding-right: 0;
+  }
 }
 
 .collection__elem--main {
   padding-right: 40%;
+
+  @include tablets {
+    padding-right: 0;
+  }
 }
 
 .collection__elem--high {
   display: flex;
+  
+  @include tablets {
+    flex-direction: column;
+  }
 }
 .collection__elem--high+.collection__elem--high {
   margin-top: rem(30px);
@@ -110,6 +201,11 @@
 
 .collection__block+.collection__block {
   margin-left: rem(24px);
+
+  @include tablets {
+    margin-left: 0;
+    margin-top: rem(30px);
+  }
 }
 
 .collection__block-title {
@@ -151,6 +247,8 @@ input.collection__input.form__input:disabled {
 
 
 .collection__btn {
+  padding: rem(19px) rem(95px);
+  font-size: rem(18px);
   border: 1.5px solid #C9A88F;
   color:$black;
   background: #fff;
@@ -159,13 +257,21 @@ input.collection__input.form__input:disabled {
     color: #fff;
     border: 1.5px solid transparent;
   }
+
+  @include phones {
+    font-size: rem(16px);
+    padding: rem(10px) rem(55px);
+  }
+}
+
+.collection__btn--last {
+  padding: rem(10px) rem(45px);
 }
 
 .collection__btn--main {
   color: $white;
   background-color: $brown;
   border-radius: 10px;
-  padding: rem(19px) rem(99px);
   border: 1px solid transparent;
   margin-bottom: rem(15px);
 
@@ -179,10 +285,20 @@ input.collection__input.form__input:disabled {
 
 .collection__error {
   display: none;
+  @include noto(light);
   margin-left: rem(30px);
   color: rgba(255, 0, 0, 0.4);
 }
 
 .collection__error--active {
   display: block;
+  @include tablets {
+    margin-left: rem(30px);
+    margin-bottom: rem(10px);
+  }
+
+  @include phones {
+    margin-left: 0;
+    margin-top: rem(10px);
+  }
 }

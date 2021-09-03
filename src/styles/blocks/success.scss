@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @include phones {
+    padding: rem(30px) rem(30px);
+  }
   
 }
 .success__title {
@@ -16,10 +20,24 @@
   @include noto(semibold);
   font-size: rem(36px);
   margin-bottom: rem(12px);
+  @include tablets {
+    font-size: rem(30px);
+  }
+
+  @include phones {
+    font-size: rem(24px);
+  }
 }
 .success__desc {
   font-size: rem(24px);
   margin-bottom: rem(25px);
+  @include tablets {
+    font-size: rem(18px);
+  }
+
+  @include phones {
+    font-size: rem(16px);
+  }
 }
 .success__check {
   background-color: $turquoise;
@@ -29,4 +47,15 @@
   background-image: url('images/success.png');
   background-position: center;
   background-repeat: no-repeat;
+  @include tablets {
+    width: rem(70px);
+    height: rem(70px);
+    background-size: rem(30px);
+  }
+
+  @include phones {
+    width: rem(50px);
+    height: rem(50px);
+    background-size: rem(25px);
+  }
 }

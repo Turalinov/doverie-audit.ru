@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  min-width: 430px;
+  // min-width: 430px;
 }
 
 .quiz__item {
@@ -29,9 +29,25 @@
   background-repeat: no-repeat;
   min-height: rem(908px);
   width: 100%;
+
+  @include tablets {
+    background-color: initial;
+    border-radius: initial;
+    background-image: initial;
+    box-shadow: initial;
+    background-position: initial;
+    background-repeat: initial;
+    min-height: initial;
+    width: initial;
+  }
 }
 .quiz__success {
   position: absolute;
   top: rem(122px);
   left: rem(70px);
+
+  @include tablets {
+    position: static;
+    margin: 0 auto;
+  }
 }

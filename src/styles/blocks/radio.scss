@@ -3,9 +3,16 @@
   display: block;
   font-size: rem(18px);
   line-height: 1.5;
+  @include phones {
+    font-size: rem(16px);
+  }
 }
 .radio + .radio {
   margin-top: 23px;
+
+  @include tablets {
+    margin-top: 16px;
+  }
 }
 .radio___elem {
   display: none;

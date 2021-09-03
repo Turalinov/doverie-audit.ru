@@ -339,9 +339,103 @@
       })
 
     } else if (step == 6) {
-      console.log(5);
-      console.log(result);
-      return false;
+
+      let name_of_organizations = getInputTextValue('name_of_organizations');
+      let name_of_organizations_elem = getInputText('name_of_organizations');
+
+      let location = getInputTextValue('location');
+      let location_elem = getInputText('location');
+
+      let tax_status = getInputTextValue('tax_status');
+      let tax_status_elem = getInputText('tax_status');
+
+      let actual_address = getInputTextValue('actual_address');
+      let actual_address_elem = getInputText('actual_address');
+
+      let email = getInputTextValue('email');
+      let email_elem = getInputText('email');
+
+      let phone = getInputTextValue('phone');
+      let phone_elem = getInputText('phone');
+
+      let tin = getInputTextValue('tin');
+      let tin_elem = getInputText('tin');
+
+      let chief_accountant = getInputTextValue('chief_accountant');
+      let chief_accountant_elem = getInputText('chief_accountant');
+
+      let head = getInputTextValue('head');
+      let head_elem = getInputText('head');
+
+      let contact_person = getInputTextValue('contact_person');
+      let contact_person_elem = getInputText('contact_person');
+      
+
+
+
+      
+      
+      
+       
+      
+      
+
+      removeErrorMessage(name_of_organizations_elem, errorDiv);
+      removeErrorMessage(location_elem, errorDiv);
+      removeErrorMessage(tax_status_elem, errorDiv);
+      removeErrorMessage(actual_address_elem, errorDiv);
+      removeErrorMessage(email_elem, errorDiv);
+      removeErrorMessage(phone_elem, errorDiv);
+      removeErrorMessage(tin_elem, errorDiv);
+      removeErrorMessage(chief_accountant_elem, errorDiv);
+      removeErrorMessage(head_elem, errorDiv);
+      removeErrorMessage(contact_person_elem, errorDiv);
+      
+
+      if (name_of_organizations == null) {
+        return addErrorMessage(name_of_organizations_elem, errorDiv);
+      }
+      if (location == null) {
+        return addErrorMessage(location_elem, errorDiv);
+      }
+      if (tax_status == null) {
+        return addErrorMessage(tax_status_elem, errorDiv);
+      }
+      if (actual_address == null) {
+        return addErrorMessage(actual_address_elem, errorDiv);
+      }
+      if (email == null) {
+        return addErrorMessage(email_elem, errorDiv);
+      }
+      if (phone == null) {
+        return addErrorMessage(phone_elem, errorDiv);
+      }
+      if (tin == null) {
+        return addErrorMessage(tin_elem, errorDiv);
+      }
+      if (chief_accountant == null) {
+        return addErrorMessage(chief_accountant_elem, errorDiv);
+      }
+      if (head == null) {
+        return addErrorMessage(head_elem, errorDiv);
+      }
+      if (contact_person == null) {
+        return addErrorMessage(contact_person_elem, errorDiv);
+      }
+      
+
+      return Object.assign(result, {
+        name_of_organizations,
+        location,
+        tax_status,
+        actual_address,
+        email,
+        phone,
+        tin,
+        chief_accountant,
+        head,
+        contact_person,
+      })
     }
 
   }
