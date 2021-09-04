@@ -633,8 +633,8 @@
 
   //потеря информирования ошибки
   function deleteInputErrorMessage() {
-    inputWithError = form_quiz.querySelectorAll('.collection__input--error');
-    console.log(inputWithError);
+    let inputWithError = form_quiz.querySelectorAll('.collection__input--error');
+    
     if (inputWithError.length != 0) {
 
       inputWithError.forEach(el => {
